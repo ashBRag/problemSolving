@@ -1,3 +1,5 @@
+// https://leetcode.com/problems/longest-palindromic-substring/
+
 /**
  * @param {string} s
  * @return {string}
@@ -35,7 +37,7 @@ export const longestPalindrome1 = function(s) {
     return p.join('')
 };
 
-//O(n)^2 , expand around center approach
+// O(n)^2 , expand around center approach
 // https://www.geeksforgeeks.org/longest-palindromic-substring-using-dynamic-programming-2/
 export var longestPalindrome2 = function(s) {
     const len = s.length
