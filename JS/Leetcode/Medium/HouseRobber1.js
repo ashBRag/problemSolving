@@ -8,7 +8,7 @@
 
 
 //recurrsion
-var rob1 = function(nums) {
+export const rob1 = function(nums) {
     function maxNotAdj(arr,i){
         if(i===0)
             return arr[i]
@@ -24,7 +24,7 @@ var rob1 = function(nums) {
 
 
 // DP with memoization
-var rob2 = function(nums) {
+export const rob2 = function(nums) {
     let len = nums.length
     let dp = Array(len).fill(-1)
     function maxNotAdj(arr,i, dp){
@@ -46,7 +46,7 @@ var rob2 = function(nums) {
 
 // DP with tabularization
 
-var rob3 = function(nums) {
+export const rob3 = function(nums) {
     let len = nums.length
     let dp = Array(len+1).fill(-1)
     dp[0] = nums[0]
@@ -61,7 +61,7 @@ var rob3 = function(nums) {
 
 // DP with tabularization and space optimization
 
-var rob4 = function(nums) { 
+export const rob4 = function(nums) { 
     let len = nums.length
     if(len===1){
         return nums[0]
@@ -77,3 +77,4 @@ var rob4 = function(nums) {
     return curr
     
 };
+
